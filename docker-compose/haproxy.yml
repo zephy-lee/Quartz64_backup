@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  haproxy:
+    image: haproxy:latest
+    container_name: haproxy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - /usr/local/etc/haproxy:/usr/local/etc/haproxy
+    networks:
+      - default
+
+#networks:
+#  proxy:
+#    external: true
