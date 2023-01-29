@@ -11,12 +11,12 @@ DietPi v8.x - kernel 5.19.0-rc1
 == current server setting
 - DietPi v8.12 + OMV 6.1
  - OMV service
-   + dlni
-   + 
+   + MiniDLNA
+   + Symlinks
    + docker - portainer, yacht
      + jellyfin
-     + photoprism
-     + aria2c + webui
+     + photoprism + mariadb
+     + aria2-pro + ariang
      + transmission
      + haproxy
      
