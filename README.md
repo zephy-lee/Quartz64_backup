@@ -25,5 +25,12 @@ DietPi v8.x - kernel 5.19.0-rc1
      + haproxy
      
 ==      
-
+ network error after boot - add postboot (restart network)
+ # wifi net error
+	 service networking restart
+	 ifdown --force wlan0
+	 ifup --force wlan0
+	 modprobe 8812au
+	#
+ 
 == 
