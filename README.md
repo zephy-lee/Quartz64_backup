@@ -1,6 +1,9 @@
 # Quartz64_backup
 My Quartz64 backup data
 
+Dietpi V8.22.3 - kernel 6.5.5
+- linux headers
+- 
 DietPi v8.16 - kernel 6.2.14
  - linux-headers
  - rtl8812au.ko-6.2.14
