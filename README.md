@@ -1,9 +1,12 @@
 # Quartz64_backup
 My Quartz64 backup data
 
+Dietpi v8.24 - kernel 6.5.11
+- linux headers
+
 Dietpi V8.22.3 - kernel 6.5.5
 - linux headers
-- 
+
 DietPi v8.16 - kernel 6.2.14
  - linux-headers
  - rtl8812au.ko-6.2.14
@@ -31,6 +34,7 @@ DietPi v8.x - kernel 5.19.0-rc1
  network error after boot - add postboot (restart network)
 	#net
 	service networking stop
+ 
 	ifdown --force wlan0
 	# ifup --force wlan0
 	modprobe 88XXau
