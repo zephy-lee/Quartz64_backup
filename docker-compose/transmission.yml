@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  transmission:
+    image: linuxserver/transmission:latest
+    container_name: transmission
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Seoul
+      - USER=*
+      - PASS=*
+    volumes:
+      - /torrent/config:/config
+      - /torrent/torrent/downloads:/downloads
+      - /torrent/torrent/watch:/watch
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped
