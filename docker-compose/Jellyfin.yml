@@ -3,6 +3,10 @@ services:
   jellyfin:
     image: linuxserver/jellyfin
     container_name: jellyfin
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
     environment:
       - PUID=1000
       - PGID=1000
