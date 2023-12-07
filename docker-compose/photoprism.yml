@@ -38,6 +38,10 @@ services:
   photoprism:
     ## Use photoprism/photoprism:preview-arm64 for testing preview builds:
     image: photoprism/photoprism:arm64
+    deploy:
+      resources:
+        limits:
+          cpus: '3'
     depends_on:
       - mariadb
     ## Don't enable automatic restarts until PhotoPrism has been properly configured and tested!
