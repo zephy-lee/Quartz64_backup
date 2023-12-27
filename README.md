@@ -1,6 +1,9 @@
 # Quartz64_backup
 My Quartz64 backup data
 
+Dietpi v8.25 - kernel 6.6.7
+- linux headers
+
 Dietpi v8.24 - kernel 6.5.11
 - linux headers
 
@@ -19,16 +22,14 @@ DietPi v8.x - kernel 5.19.0-rc1
  - linux-headers
 
 == current server setting
-- DietPi v8.12 + OMV 6.1
- - OMV service
-   + MiniDLNA
-   + Symlinks
-   + docker - portainer, yacht
+- DietPi v8.25
+ - webbmin
+ - docker - portainer
      + jellyfin
      + photoprism + mariadb
      + aria2-pro + ariang
      + transmission
-     + haproxy
+     + miniDlna
      
 ==      
  network error after boot - add postboot (restart network)
